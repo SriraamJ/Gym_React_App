@@ -7,43 +7,37 @@ const Features = () => {
   return (
     <div>
         <section className="features" id="features">
+        <h1 class="heading"> <span>Gym features</span> </h1>
 
-<h1 className="heading"> <span>gym features</span> </h1>
+    <div class="box-container">
 
-<div className="box-container">
-
-    <div className="box">
-        <div className="image">
+        <div class="box">
             <img src={BodyBuilding} alt=""/>
+            <div class="content">
+                <h3>Gym for Men</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
         </div>
-        <div className="content">
-            <h3>body building</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
-        </div>
-    </div>
 
-    <div className="box second">
-        <div className="image">
-            <img src={Men} alt=""/>
-        </div>
-        <div className="content">
-            <h3>gym for men</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
-        </div>
-    </div>
-
-    <div className="box">
-        <div className="image">
+        <div class="box">
             <img src={Women} alt=""/>
+            <div class="content">
+                <h3>Gym for Women</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
         </div>
-        <div className="content">
-            <h3>gym for women</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
 
-        </div>
     </div>
-
-</div>
 
 </section>
     </div>

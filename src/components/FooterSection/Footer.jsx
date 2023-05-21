@@ -3,27 +3,17 @@ import "./Footer.css"
 const Footer = () => {
   return (
     <div>
-        <section className="footer">
+        <section className="footer" id="contact">
 
 <div className="box-container">
 
-    <div className="box">
-        <h3>quick links</h3>
-        <a className="links" href="#home">home</a>
-        <a className="links" href="#about">about</a>
-        <a className="links" href="#features">features</a>
-        <a className="links" href="#pricing">pricing</a>
-        <a className="links" href="#trainers">trainers</a>
-        <a className="links" href="#blogs">blogs</a>
-    </div>
-
-    <div className="box">
+    <div className="box" id= "timing">
         <h3>opening hours</h3>
-        <p> monday : <i> 7:00am - 10:30pm </i> </p>
-        <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
-        <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
-        <p> friday : <i> 7:00am - 10:30pm </i> </p>
-        <p> saturday : <i> 7:00am - 10:30pm </i> </p>
+        <p> monday : <i> 5:30am - 11:00am </i> & <i>4:30pm - 9:30pm</i></p>
+        <p> tuesday : <i> 7:00am - 10:30pm </i> & <i>4:30pm - 9:30pm</i></p>
+        <p> Saturday : <i> 7:00am - 10:30pm </i> & <i>4:30pm - 9:30pm</i></p>
+        <p> friday : <i> 7:00am - 10:30pm </i>& <i>4:30pm - 9:30pm</i> </p>
+        <p> saturday : <i> 7:00am - 10:30pm </i>& <i>4:30pm - 9:30pm</i> </p>
         <p> sunday : <i> closed </i> </p>
     </div>
 
@@ -36,8 +26,7 @@ const Footer = () => {
         <div className="share">
             <a href="#" className="fab fa-facebook-f"></a>
             <a href="#" className="fab fa-twitter"></a>
-            <a href="#" className="fab fa-linkedin"></a>
-            <a href="#" className="fab fa-pinterest"></a>
+            <a href="#" className="fab fa-instagram"></a>
         </div>
     </div>
 
@@ -45,7 +34,7 @@ const Footer = () => {
         <h3>newsletter</h3>
         <p>subscribe for latest updates</p>
         <form action="">
-            <input type="email" name="" className="email" placeholder="enter your email" id=""/>
+            <input type="email" name="" className="email" placeholder="Enter your email" id=""/>
             <input type="submit" value="subscribe" className="btn"/>
         </form>
     </div>

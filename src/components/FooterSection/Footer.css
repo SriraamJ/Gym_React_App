@@ -5,7 +5,10 @@
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
   }
-  
+  #timing
+  {
+    text-transform: lowercase;
+  }
   .footer .box-container .box h3 {
     font-size: 2.2rem;
     color: #fff;
@@ -20,7 +23,7 @@
   }
   
   .footer .box-container .box .links:hover {
-    color: #f00;
+    color: #FFFF00;
   }
   
   .footer .box-container .box p {
@@ -31,7 +34,7 @@
   
   .footer .box-container .box p i {
     padding-right: .5rem;
-    color: #f00;
+    color: #FFFF00;
   }
   
   .footer .box-container .box .share {
@@ -51,7 +54,8 @@
   }
   
   .footer .box-container .box .share a:hover {
-    background: #f00;
+    background: #FFFF00;
+    color: #111;
   }
   
   .footer .box-container .box form .email {

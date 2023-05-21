@@ -1,65 +1,60 @@
 
 .features .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    gap: 1.5rem;
-    gap: 0;
-  }
-  
-  .features .box-container .box {
-    background: #111;
-  }
-  
-  .features .box-container .box.second {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse;
-            flex-flow: column-reverse;
-  }
-  
-  .features .box-container .box:hover .image img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  
-  .features .box-container .box .image {
-    height: 30rem;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .features .box-container .box .image img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  .features .box-container .box .content {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .features .box-container .box .content img {
-    height: 9rem;
-    margin-bottom: 1rem;
-    -webkit-filter: invert(1);
-            filter: invert(1);
-  }
-  
-  .features .box-container .box .content h3 {
-    font-size: 2rem;
-    color: #f00;
-  }
-  
-  .features .box-container .box .content p {
-    line-height: 2;
-    font-size: 1.5rem;
-    color: #aaa;
-    padding: 1rem 0;
-  }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+
+.features .box-container .box {
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.features .box-container .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.features .box-container .box .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  padding: 2rem;
+  -webkit-transform: translateY(6.5rem);
+          transform: translateY(6.5rem);
+}
+
+.features .box-container .box .content span {
+  font-size: 1.5rem;
+  color: #f00;
+}
+
+.features .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: .5rem;
+}
+
+.features .box-container .box .content .share {
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid #aaa;
+}
+
+.features .box-container .box .content .share a {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+.features .box-container .box .content .share a:hover {
+  color: #f00;
+}

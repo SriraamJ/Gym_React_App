@@ -1,23 +1,40 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "./Navbar.css"
 const Navbar = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      settoggle(false)
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  const[toggle, settoggle] = useState(false) 
+  const handleClick = (e) =>
+  {
+    settoggle(!toggle)
+  }
   return (
     <header className="header">
 
     <a href="#" className="logo"> Key <span>2</span> Fitness </a>
 
-    <div id="menu-btn" className="fas fa-bars"></div>
+    <div id="menu-btn" className={`fas fa-bars ${toggle ?"fa-times" : ""}`} onClick={handleClick}></div>
 
-    <nav className="navbar">
+    <nav className={`navbar ${toggle ?"active" : ""}`}>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
-        <a href="#trainers">Trainers</a>
-        <a href="#blogs">Location</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
     </nav>
 
 </header>
+
   )
 }
 
